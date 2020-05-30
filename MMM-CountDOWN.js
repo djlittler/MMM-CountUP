@@ -7,17 +7,17 @@
  * MIT Licensed.
  */
 
-Module.register("MMM-CountUP", {
+Module.register("MMM-CountDOWN", {
   defaults: {
-    header: 'Days passed since COVID19 Quarantine',
-    date: '2020-03-20', // YYYY-MM-DD
+    header: 'Days until COVID19 Quarantine ends',
+    date: '2020-08-01', // YYYY-MM-DD
     time: '00:00:00', // HH:MM:SS
     showFullDate : false,
     showOnlyWeeks: false
   },
 
   getStyles: function() {
-    return ["MMM-CountUP.css"]
+    return ["MMM-CountDOWN.css"]
   },
 
   start: function() {
@@ -25,7 +25,7 @@ Module.register("MMM-CountUP", {
     
     // Schedule update interval.
     var self = this;
-    var calcCountUP = setInterval(function() {
+    var calcCountDOWN = setInterval(function() {
       self.updateDom();
     }, 1000)
   },
