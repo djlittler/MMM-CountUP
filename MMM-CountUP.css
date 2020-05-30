@@ -1,20 +1,20 @@
-.countUP {
+.countDOWN {
   text-align: center;
 }
 
-.countUP tr td {
+.countDOWN tr td {
   width: 2em;
 }
 
-.countUP tr td.digits {
+.countDOWN tr td.digits {
   color: #ee5486;
 }
 
-.countUP tr.textsRow {
+.countDOWN tr.textsRow {
   font-size: 19px;
   color: #FFF;
 }
 
-.countUP tr td.none {
+.countDOWN tr td.none {
   display: none;
 }
